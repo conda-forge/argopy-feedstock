@@ -11,18 +11,18 @@ source:
   sha256: 627065bd75e72b19ed23d74ec858e4de2d3cec287659c1ea769ccb89073c305b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
+    - python >=3
     - pip
-    - python
   run:
-    - python
+    - python >=3
     - dask >=2.9
-    - erddapy >=0.5
+    - erddapy >=0.5,<0.8.0
     - fsspec >=0.7.1
     - gsw >=3.3.1
     - ipython >=5.0.0
