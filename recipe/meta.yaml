@@ -1,5 +1,5 @@
 {% set name = "argopy" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5af0a2cc0805e3e7c599b3b4e7cded86c39da06eafa0270fb410bf7fa06e08ff
+  sha256: 855978327f773f8eabb4fe904072ce16571c9501ae365c3acdc3e9cda931dcc7
 
 build:
   number: 0
