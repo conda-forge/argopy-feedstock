@@ -1,11 +1,11 @@
-About argopy
-============
+About argopy-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/argopy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/euroargodev/argopy
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/argopy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A python library for Argo data beginners and experts
 
