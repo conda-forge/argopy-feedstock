@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - setuptools >=42
     - pip
   run:
     - netcdf4 >=1.5.3
-    - python >=3.6
+    - python >=3.7
     - aiohttp >=3.7
     - erddapy >=0.7
     - fsspec >=0.8
