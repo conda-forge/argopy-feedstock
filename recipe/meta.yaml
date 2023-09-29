@@ -1,5 +1,5 @@
 {% set name = "argopy" %}
-{% set version = "0.1.13" %}
+{% set version = "0.1.14" %}
 
 
 package:
@@ -8,20 +8,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 41baa3dd92b298562ec51a52bacc37956e6b286b8d1e77fb2b39e3c170a3c1f5
+  sha256: af68fc6fd36660956d92496968a9458ea47d1e8e54be793dc4e0ce883c580477
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - setuptools >=42
     - pip
   run:
-    - python >=3.6
+    - netcdf4 >=1.5.3
+    - python >=3.7
     - aiohttp >=3.7
     - erddapy >=0.7
     - fsspec >=0.8
