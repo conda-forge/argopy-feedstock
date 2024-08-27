@@ -1,5 +1,5 @@
 {% set name = "argopy" %}
-{% set version = "0.1.15" %}
+{% set version = "0.1.16" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ec067392645d0fb277e5532d8441d03c4dedb9790be16b021b611e68b3b900e1
+  sha256: da2749bf9e79ef26eaf92c9550b9720150e1fffe8eb45983652a25c726179837
 
 build:
   number: 0
@@ -21,17 +21,18 @@ requirements:
     - setuptools >=42
     - pip
   run:
+    - decorator >=5.1
     - netcdf4 >=1.5.3
     - python >=3.7
     - aiohttp >=3.7
-    - erddapy >=0.7
-    - fsspec >=0.8,<=2023.10.0
+    - erddapy >0.8
+    - fsspec >=0.8
     - netCDF4 >=1.5.3
     - packaging >=20.4
     - requests >=2.28
     - scipy >=1.5
     - toolz >=0.8.2
-    - xarray >=0.18
+    - xarray >=0.18,<2024.3
     # imports pkg_resources
     - setuptools >=42
 
