@@ -1,5 +1,5 @@
 {% set name = "argopy" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 {% set python_min = "3.11" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2df338166dbd3a97bb485c69f3f7e644bd8397caec4a0712c55928a789edb5d7
+  sha256: c2b16a1bf1a1ec4ce9ea051002461885c5d85e5a4afab0fa2dbb0bf90831d331
 
 build:
   number: 0
