@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  python_min: "3.11"
+  version: "1.5.0"
+
+package:
+  name: argopy
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/a/argopy/argopy-${{ version }}.tar.gz
+  sha256: 6cea4f07ee411eeeaa101787015118484d68dcfc1d2a7d8c90d2723a8d6cdd3a
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=77
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - xarray >=2025.7
+    - scipy
+    - erddapy
+    - netcdf4
+    - h5netcdf
+    - fsspec
+    - toolz
+    - requests
+    - aiohttp
+
+tests:
+  - python:
+      imports:
+        - argopy
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: A python library for Argo data beginners and experts
+  license: EUPL-1.2
+  license_file: LICENSE
+  homepage: https://github.com/euroargodev/argopy
+
+extra:
+  recipe-maintainers:
+    - gmaze
+    - ocefpaf
