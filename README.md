@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/argopy-feedstoc
 
 Home: https://github.com/euroargodev/argopy
 
-Package license: Apache-2.0
+Package license: EUPL-1.2
 
 Summary: A python library for Argo data beginners and experts
 
@@ -188,5 +188,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@gmaze](https://github.com/gmaze/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
